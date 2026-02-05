@@ -31,7 +31,7 @@ export default function Contact() {
                             <div className="flex items-center gap-3">
                                 <span className="text-[var(--matrix-green)]">discord:</span>
                                 <a
-                                    href="https://discord.gg/placeholder"
+                                    href="https://discord.gg/bxMuhpD9dH"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-gray-300 hover:text-[var(--matrix-green)] transition-colors"

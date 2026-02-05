@@ -2,11 +2,11 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-20">
       {/* Logo with glow effect */}
-      <div className="animate-fade-in-up animate-pulse-glow animate-float mb-8">
+      <div className="animate-fade-in-up animate-pulse-glow animate-float">
         <img
-          src="/logo.jpg"
+          src="/logo.png"
           alt="PLU CS Club Logo"
-          className="w-48 h-48 md:w-64 md:h-64 object-contain rounded-lg"
+          className="w-64 h-64 md:w-100 md:h-100 object-contain rounded-lg"
         />
       </div>
 

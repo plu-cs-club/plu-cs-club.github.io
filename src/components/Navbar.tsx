@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link
           to="/"
-          className="text-[var(--matrix-green)] text-xl font-semibold tracking-wider hover:glow-text transition-all duration-300"
+          className="text-[var(--matrix-green)] text-base md:text-xl font-semibold tracking-wider hover:glow-text transition-all duration-300"
         >
           {'>'} PLU_CS_CLUB
         </Link>

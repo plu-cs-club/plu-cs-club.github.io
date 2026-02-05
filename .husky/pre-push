@@ -1,0 +1,28 @@
+# Allow bypassing with --no-verify
+if [ "$HUSKY_BYPASS" = "1" ]; then
+  echo "Bypassing pre-push checks..."
+  exit 0
+fi
+
+echo "Running pre-push checks..."
+echo "To bypass: git push --no-verify or HUSKY_BYPASS=1 git push"
+echo ""
+
+echo "Building project..."
+pnpm run build
+
+if [ $? -ne 0 ]; then
+  echo "Build failed!"
+  exit 1
+fi
+
+# Run all checks
+pnpm run check-all
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "Pre-push checks failed. Fix issues or bypass with:"
+  echo "  git push --no-verify"
+  echo "  HUSKY_BYPASS=1 git push"
+  exit 1
+fi

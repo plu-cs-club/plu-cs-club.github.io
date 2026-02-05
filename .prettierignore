@@ -1,0 +1,9 @@
+.next
+node_modules
+public
+.vercel
+coverage
+.idea
+.env
+pnpm-lock.yaml
+pnpm-workspace.yaml

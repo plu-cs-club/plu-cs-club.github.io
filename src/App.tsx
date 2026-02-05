@@ -1,18 +1,25 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
+import MatrixRain from './components/MatrixRain';
 import Navbar from './components/Navbar';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import Home from './pages/Home';
 
 function App() {
   return (
     <HashRouter>
-      <div className="min-h-screen bg-gray-100">
+      {/* Matrix rain background */}
+      <MatrixRain />
+
+      {/* Main content */}
+      <div className="relative z-10 min-h-screen">
         <Navbar />
-        <main className="container mx-auto py-8 px-4">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>
